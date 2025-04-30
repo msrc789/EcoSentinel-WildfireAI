@@ -2,6 +2,6 @@ services:
   - type: web
     name: wildfire-api
     env: python
-    buildCommand: ""
+    buildCommand: pip install -r requirements-api.txt
     startCommand: python api/main.py
     plan: free
